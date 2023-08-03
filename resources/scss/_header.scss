@@ -1,20 +1,26 @@
 @use "vars" as *;
 
+.header-top {
+    height: 30px;
+    background-color: $cl-main;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: end;
+
+    a {
+        color: white;
+        padding: 0 10px;
+    }
+}
+
 header {
     height: 100px;
     border: 1px solid red;
+}
 
-    .header-top {
-        height: 30px;
-        background-color: $cl-main;
+.nav {
+    ul {
         display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        text-align: end;
-
-        a {
-            color: white;
-            padding: 0 10px;
-        }
     }
 }
