@@ -5,16 +5,23 @@
     </div>
 </div>
 <header>
-    <div class="logo">
-        <figure>
-            <img src="img/dc-logo.png" alt="logo_dc">
-        </figure>
-    </div>
-    <div class="nav">
-        <ul>
-            @foreach ($h_links as $link)
-                <li>{{ $link }}</li>
-            @endforeach
-        </ul>
+    <div class="container">
+        <div class="logo">
+            <figure>
+                <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo_dc">
+            </figure>
+        </div>
+        <div class="nav">
+            <ul>
+                @foreach ($h_links as $link)
+                    <li>
+                        <a href="">{{ $link }}</a>
+                    </li>
+                @endforeach
+            </ul>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="search">
+        </div>
     </div>
 </header>

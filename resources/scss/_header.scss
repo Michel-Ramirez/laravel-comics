@@ -16,11 +16,42 @@
 
 header {
     height: 100px;
-    border: 1px solid red;
+
+    .logo {
+        img {
+            display: block;
+            height: 80px;
+        }
+    }
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .nav {
     ul {
         display: flex;
+
+        li {
+            margin: 0 10px;
+            a {
+                color: black;
+                font-weight: bold;
+            }
+        }
     }
+}
+
+.search-bar {
+    input {
+        border: 0;
+        border-bottom: 2px solid $cl_main;
+    }
+}
+
+input:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
 }
