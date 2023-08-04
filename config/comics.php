@@ -56,7 +56,7 @@ return [
     [
         "title" => "Aquaman Vol. 4: Underworld",
         "description" => "Enraged by rumors of Arthur’s survival in the slums of Atlantis, the ruthless King Rath orders the use of ancient Atlantean techno-magic to track down the Aquaman at all costs! But the ex-king Arthur can’t hide for long when his fate collides with that of a mysterious young woman on the run from Rath’s own secret police. Her name: Dolphin. Collects AQUAMAN #25-30.  ",
-        "thumb" => "https://static.wikia.nocookie.net/marvel_dc/images/f/f3/Aquaman_Vol_8_25.jpg/revision/latest/scale-to-width-down/1000?cb=20170621060537",
+        "thumb" => "https://m.media-amazon.com/images/I/51MMac0Ni0L._SX315_BO1,204,203,200_.jpg",
         "price" => "$16.99",
         "series" => "Aquaman",
         "sale_date" => "2018-01-24",
@@ -71,7 +71,7 @@ return [
     [
         "title" => "Batgirl #1",
         "description" => "“Beyond Burnside” Chapter One: The Batgirl you know and love is going global with Eisner Award-winning and New York Times best-selling writer Hope Larson (A Wrinkle in Time, Goldie Vance) and all-star artist Rafael Albuquerque (AMERICAN VAMPIRE). In order to up her game, Babs travels to Japan on a quest to train with the most elite modern combat masters of the East. But when a chance meeting with an old friend puts a target on her back, Batgirl may need to use her new skills to solve a deadly mystery.",
-        "thumb" => "https://static.wikia.nocookie.net/marvel_dc/images/f/f0/Batgirl_Vol_1_1.jpg/revision/latest?cb=20090107173813",
+        "thumb" => "https://catalogo.mangame.it/A/B/batgirl_1_dc_classic_bronze_age.png",
         "price" => "$2.99",
         "series" => "Batgirl",
         "sale_date" => "2016-07-27",

@@ -10,19 +10,22 @@
         <main>
             <div class="jumbotron">
             </div>
-            <div class="wrapper container">
+            <div class="wrapper">
                 <div class="cards">
                     <div class="banner">CURRENT SERIES</div>
-                    <ul>
-                        <li>
-                            <div class="card">
-                                <img src="https://m.media-amazon.com/images/I/91Rajxin57L.jpg" alt="">
-                                <p class="series">Action Comics #1000: The Deluxe Edition</p>
-                            </div>
-                        </li>
+                    <ul class="card-body">
+                        @foreach ($comics as $comic)
+                            <li>
+                                <div class="card">
+                                    <figure>
+                                        <img src="{{ $comic['thumb'] }}" alt="">
+                                    </figure>
+                                    <a href="#" class="series">Action Comics #1000: The Deluxe Edition</a>
+                                </div>
+                            </li>
+                        @endforeach
                     </ul>
                 </div>
-                {{-- <button class="btn-more">LOAD MORE</button> --}}
             </div>
         </main>
     @endsection

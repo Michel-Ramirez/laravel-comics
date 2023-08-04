@@ -1,0 +1,26 @@
+// ****** | FOOTER TOP | ****** //
+
+// ****** | FOOTER | ****** //
+
+.main-footer {
+    background-color: black;
+}
+
+footer {
+    a {
+        color: gray;
+    }
+
+    h4 {
+        color: white;
+        margin: 20px 0;
+    }
+
+    .wrapper-col {
+        display: flex;
+    }
+
+    .col {
+        width: 200px;
+    }
+}

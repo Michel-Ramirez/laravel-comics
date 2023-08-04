@@ -13,9 +13,9 @@
         </div>
         <div class="nav">
             <ul>
-                @foreach ($h_links as $link)
+                @foreach ($h_links as $h_link)
                     <li>
-                        <a href="">{{ $link }}</a>
+                        <a href="">{{ $h_link }}</a>
                     </li>
                 @endforeach
             </ul>

@@ -10,18 +10,14 @@ main {
     color: white;
     display: inline-block;
     position: absolute;
-    top: -20px;
+    top: -70px;
     left: -5px;
 }
 
 .wrapper {
-    height: 600px;
-
+    width: 1080px;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding: 50px 0;
 }
 
 .jumbotron {
@@ -31,37 +27,38 @@ main {
 }
 
 .card {
-    height: 150px;
-    width: 150px;
-    margin: 20px;
-    img {
-        height: 100%;
-        display: block;
-        object-fit: cover;
-        // object-position: left top;
+    width: 100%;
+
+    figure {
+        height: 250px;
+        margin-bottom: 20px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+}
+.card-body {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        width: calc(100% / 6 - 20px);
+        margin: 20px;
     }
 }
 
-// .cards {
-//     height: 100%;
-//     display: flex;
-//     align-items: center;
-//     position: relative;
-// }
+.card a:hover {
+    color: $cl-main;
+}
 
-ul {
-    display: flex;
-    flex-wrap: wrap;
+.cards {
+    height: 100%;
+    position: relative;
 }
 
 .series {
     color: white;
-}
-
-.btn-more {
-    background-color: $cl-main;
-    color: white;
-    padding: 10px 40px;
-    margin-bottom: 20px;
-    border: 0;
 }
