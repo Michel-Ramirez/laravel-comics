@@ -13,10 +13,12 @@
         </div>
         <div class="nav">
             <ul>
-                @foreach ($h_links as $h_link)
-                    <li>
-                        <a href="">{{ $h_link }}</a>
-                    </li>
+                @foreach ($main_links as $links)
+                    @foreach ($links['h_links'] as $h_link)
+                        <li>
+                            <a href="#">{{ $h_link }}</a>
+                        </li>
+                    @endforeach
                 @endforeach
             </ul>
         </div>

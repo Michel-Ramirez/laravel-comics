@@ -15,9 +15,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $h_links = config('header_links');
+    $main_links = config('main_links');
     $comics = config('comics');
 
 
-    return view('home', compact('h_links'), compact('comics'));
+    return view('home', compact('main_links'), compact('comics'));
 })->name('home');
+
+Route::get('/ActionComics#1000', function () {
+
+    $comics = config('comics');
+
+
+    return view('action_comic', compact('comics'));
+})->name('action_comic');
