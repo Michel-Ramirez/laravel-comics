@@ -5,13 +5,20 @@
 @section('main-content')
 
     <div class="separator-jumbo">
-        @foreach ($comics as $comic)
-            <img src="{{ $comic['thumb'] }}" alt="">
-        @endforeach
+        <div class="wrapper">
+            <img src="{{ $comics[0]['thumb'] }}" alt="">
+        </div>
     </div>
 
     <section>
-
+        <div class="wrapper">
+            <div class="container-content">
+                <div class="content">
+                    <h1>{{ $comics[0]['title'] }}</h1>
+                </div>
+                <div class="advertisement"></div>
+            </div>
+        </div>
     </section>
 
 @endsection

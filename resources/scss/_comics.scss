@@ -2,9 +2,34 @@
 
 .separator-jumbo {
     height: 50px;
+    width: 100%;
     background-color: $cl-main;
+    position: relative;
 
     img {
-        height: 150px;
+        height: 200px;
+        position: absolute;
+        bottom: 70%;
     }
+}
+
+.container-content {
+    display: flex;
+
+    main {
+        background-color: white;
+    }
+}
+
+.content {
+    width: 70%;
+    height: 200px;
+    border: 1px solid red;
+}
+
+.advertisement {
+    width: 30%;
+    height: 200px;
+
+    border: 1px solid blue;
 }

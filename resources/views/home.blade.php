@@ -5,8 +5,8 @@
 @section('main-content')
 
 
-    <div class="wrapper">
-        <div class="cards">
+    <div class="cards">
+        <div class="wrapper">
             <div class="banner">CURRENT SERIES</div>
             <ul class="card-body">
                 @foreach ($comics as $comic)
