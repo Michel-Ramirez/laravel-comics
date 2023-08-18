@@ -52,3 +52,14 @@ header {
 input:focus-visible {
     outline: -webkit-focus-ring-color auto 0px;
 }
+
+.jumbotron {
+    height: 600px;
+    img {
+        height: 100%;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: top;
+    }
+}

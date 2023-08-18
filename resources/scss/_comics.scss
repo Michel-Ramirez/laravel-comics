@@ -1,0 +1,10 @@
+@use "vars" as *;
+
+.separator-jumbo {
+    height: 50px;
+    background-color: $cl-main;
+
+    img {
+        height: 150px;
+    }
+}

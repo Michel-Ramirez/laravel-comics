@@ -22,10 +22,10 @@ Route::get('/', function () {
     return view('home', compact('main_links'), compact('comics'));
 })->name('home');
 
-Route::get('/ActionComics#1000', function () {
-
+Route::get('/ActionComics', function () {
+    $main_links = config('main_links');
     $comics = config('comics');
 
 
-    return view('action_comic', compact('comics'));
+    return view('action_comic', compact('main_links'), compact('comics'));
 })->name('action_comic');

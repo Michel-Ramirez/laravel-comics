@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.main_layout')
 
-<body>
-    @extends('layouts.main_layout')
+@section('title', 'Comics')
 
-    @section('title', 'Comics')
+@section('main-content')
 
-    @section('main-content')
+    <div class="separator-jumbo">
+        @foreach ($comics as $comic)
+            <img src="{{ $comic['thumb'] }}" alt="">
+        @endforeach
+    </div>
 
-        <h1>PROVA PORCO DIO"!!!!!</h1>
+    <section>
 
-    @endsection
-</body>
+    </section>
 
-</html>
+@endsection

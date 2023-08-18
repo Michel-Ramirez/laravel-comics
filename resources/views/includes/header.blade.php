@@ -26,4 +26,7 @@
             <input type="text" placeholder="search">
         </div>
     </div>
+    <div class="jumbotron">
+        <img src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="">
+    </div>
 </header>

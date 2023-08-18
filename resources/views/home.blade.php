@@ -1,35 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.main_layout')
 
-<body>
-    @extends('layouts.main_layout')
+@section('title', 'Home')
 
-    @section('title', 'Home')
+@section('main-content')
 
-    @section('main-content')
 
-        <div class="jumbotron">
+    <div class="wrapper">
+        <div class="cards">
+            <div class="banner">CURRENT SERIES</div>
+            <ul class="card-body">
+                @foreach ($comics as $comic)
+                    <li>
+                        <div class="card">
+                            <figure>
+                                <img src="{{ $comic['thumb'] }}" alt="">
+                            </figure>
+                            <a href="{{ url('/ActionComics#1000') }}" class="series">{{ $comic['title'] }}</a>
+                        </div>
+                    </li>
+                @endforeach
+            </ul>
         </div>
-        <div class="wrapper">
-            <div class="cards">
-                <div class="banner">CURRENT SERIES</div>
-                <ul class="card-body">
-                    @foreach ($comics as $comic)
-                        <li>
-                            <div class="card">
-                                <figure>
-                                    <img src="{{ $comic['thumb'] }}" alt="">
-                                </figure>
-                                <a href="{{ url('/ActionComics#1000') }}" class="series">{{ $comic['title'] }}</a>
-                            </div>
-                        </li>
-                    @endforeach
-                </ul>
-            </div>
-        </div>
-        <a href="{{ route('action_comic') }}">PROVA</a>
+    </div>
+    <a href="{{ route('action_comic') }}">PROVA</a>
 
-    @endsection
-</body>
-
-</html>
+@endsection
