@@ -27,5 +27,5 @@ Route::get('/ActionComics', function () {
     $comics = config('comics');
 
 
-    return view('action_comic', compact('main_links'), compact('comics'));
+    return view('pages.action_comic', compact('main_links'), compact('comics'));
 })->name('action_comic');

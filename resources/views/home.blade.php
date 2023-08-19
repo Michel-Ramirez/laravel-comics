@@ -13,7 +13,9 @@
                     <li>
                         <div class="card">
                             <figure>
-                                <img src="{{ $comic['thumb'] }}" alt="">
+                                <a href="{{ url('/ActionComics#1000') }}" class="series">
+                                    <img src="{{ $comic['thumb'] }}" alt="">
+                                </a>
                             </figure>
                             <a href="{{ url('/ActionComics#1000') }}" class="series">{{ $comic['title'] }}</a>
                         </div>
@@ -22,6 +24,5 @@
             </ul>
         </div>
     </div>
-    <a href="{{ route('action_comic') }}">PROVA</a>
 
 @endsection

@@ -57,7 +57,9 @@
                     </div>
                 </div>
             </div>
-            <div class="logo-bg"></div>
+            <div class="logo-bg">
+                <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="">
+            </div>
         </div>
     </div>
     {{-- footerBottom  --}}

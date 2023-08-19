@@ -24,12 +24,40 @@
 .content {
     width: 70%;
     height: 200px;
-    border: 1px solid red;
+    h1 {
+        font-size: 2rem;
+    }
 }
 
 .advertisement {
     width: 30%;
     height: 200px;
+    img {
+        padding: 20px;
+    }
+}
 
-    border: 1px solid blue;
+.price-section {
+    width: 100%;
+    margin: 20px 0;
+    background-color: $bgc-price-bar;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        color: white;
+        background-color: $bgc-price-bar;
+        border: 0;
+        padding: 0 20px;
+        cursor: pointer;
+    }
+
+    .price {
+        color: white;
+    }
+    h6 {
+        color: #baf980;
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
 }

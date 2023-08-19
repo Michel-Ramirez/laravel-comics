@@ -3,7 +3,13 @@
 // ****** | FOOTER | ****** //
 
 .main-footer {
-    background-color: black;
+    // background-color: black;
+    background-image: url("/resources/img/footer-bg.jpg");
+    background-repeat: no-repeat;
+
+    .wrapper {
+        display: flex;
+    }
 }
 
 footer {
@@ -23,4 +29,16 @@ footer {
     .col {
         width: 200px;
     }
+}
+
+.logo-bg {
+    width: 400px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.nav-site {
+    padding-top: 20px;
 }
