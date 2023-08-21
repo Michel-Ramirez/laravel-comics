@@ -6,7 +6,7 @@
     color: white;
     display: inline-block;
     position: absolute;
-    top: -20px;
+    top: -70px;
     left: -5px;
 }
 
@@ -14,6 +14,13 @@
     width: 1080px;
     margin: 0 auto;
     position: relative;
+}
+
+.cards {
+    padding: 50px 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
 }
 
 .card {
@@ -42,12 +49,6 @@
 
 .card a:hover {
     color: $cl-main;
-}
-
-.cards {
-    height: 100%;
-    width: 100%;
-    background-color: black;
 }
 
 .series {
