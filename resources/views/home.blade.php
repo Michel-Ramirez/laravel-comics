@@ -13,11 +13,11 @@
                     <li>
                         <div class="card">
                             <figure>
-                                <a href="{{ url('/ActionComics#1000') }}" class="series">
+                                <a href="{{ route('comic', $loop->index) }}" class="series">
                                     <img src="{{ $comic['thumb'] }}" alt="">
                                 </a>
                             </figure>
-                            <a href="{{ url('/ActionComics#1000') }}" class="series">{{ $comic['title'] }}</a>
+                            <a href="{{ route('comic', $loop->index) }}" class="series">{{ $comic['title'] }}</a>
                         </div>
                     </li>
                 @endforeach

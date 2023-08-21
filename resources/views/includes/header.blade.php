@@ -6,11 +6,11 @@
 </div>
 <header>
     <div class="container">
-        <div class="logo">
+        <a href="{{ route('home') }}" class="logo">
             <figure>
                 <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo_dc">
             </figure>
-        </div>
+        </a>
         <div class="nav">
             <ul>
                 @foreach ($main_links as $links)

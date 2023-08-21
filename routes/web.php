@@ -15,17 +15,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $main_links = config('main_links');
+    // $main_links = config('main_links');
     $comics = config('comics');
 
-
-    return view('home', compact('main_links'), compact('comics'));
+    return view('home', compact('main_links', 'comics'));
 })->name('home');
 
-Route::get('/ActionComics', function () {
-    $main_links = config('main_links');
+Route::get('/comic{index}', function ($index) {
+    // $main_links = config('main_links');
     $comics = config('comics');
 
+    $comic = $comics[$index];
 
-    return view('pages.action_comic', compact('main_links'), compact('comics'));
-})->name('action_comic');
+    return view('pages.comic', compact('comic'));
+})->name('comic');
