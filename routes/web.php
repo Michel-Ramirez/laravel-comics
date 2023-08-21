@@ -18,7 +18,7 @@ Route::get('/', function () {
     // $main_links = config('main_links');
     $comics = config('comics');
 
-    return view('home', compact('main_links', 'comics'));
+    return view('home', compact('comics'));
 })->name('home');
 
 Route::get('/comic{index}', function ($index) {
